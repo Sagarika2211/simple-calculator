@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content%}
+
+
+<div class="container">
+
+    <h1>Divide</h1>
+
+    <div>
+        <!-- add form -->
+        <form method="POST" action="/divide" class="form-group">
+            <!-- input for first value -->
+            <div>
+                <label for="number1">First Number:</label>
+                <input type="number" id="number1" name="n1" placeholder="Enter your first value" required=""
+                    style="width:60%">
+            </div>
+            <!-- input for second value -->
+            <div>
+                <label for="number2">Second Number:</label>
+                <input type="number" id="number2" name="n2" placeholder="Enter your second value" required=""
+                    style="width:60%">
+            </div>
+            <hr>
+            <!-- submit button -->
+            <div>
+                <button type="submit">Divide</button>
+                <button type="reset">Clear</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

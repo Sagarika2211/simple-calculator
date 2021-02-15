@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content%}
+
+<div class="container">
+ <div class="p-3 mb-2 bg-danger text-white"><h1>Welcome to our Simple Calculator!</h1></div>
+    
+
+    <div>
+        <ul>
+            {% for item in menu%}
+            <li><a href="{{item.url}}">{{item.title}}</a></li>
+            {% endfor %}
+        </ul>
+
+    </div>
+    <div {% endblock %}

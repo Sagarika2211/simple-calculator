@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content%}
+
+<div class="container">
+
+
+    <h1>Angle_sct</h1>
+
+    <div>
+        <!-- add form -->
+        <form method="POST" action="/angle_sct" class="form-group">
+            <!-- input for first value -->
+            <div class="form-group">
+                <label for="number1">angle:</label>
+                <input type="number" id="number1" name="n1" placeholder="Enter your first value" required=""
+                    style="width:60%">
+            </div>
+            <hr>
+            <!-- submit button -->
+            <div>
+                <button type="submit">Angle_sct</button>
+                <button type="reset">Clear</button>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+{% endblock %}
